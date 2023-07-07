@@ -1,0 +1,80 @@
+package inheritance.app2;
+
+public class TenthClass {
+	
+	public void dispalayQualification() {
+		System.out.println("Completed Xth class");
+	}
+
+}
+
+package inheritance.app2;
+
+public class Intermediate extends TenthClass{
+	
+	public void displayInterQualification() {
+		System.out.println("Intermediate completed...");
+	}
+
+}
+
+package inheritance.app2;
+
+public class BTechQualification extends Intermediate{
+	
+	public void displayBtechQualification() {
+		System.out.println("BTech completed....");
+	}
+
+}
+
+package inheritance.app2;
+
+public class InheritanceDemo2 {
+
+	public static void main(String[] args) {
+		
+		BTechQualification btech = new BTechQualification();
+		btech.dispalayQualification();
+		btech.displayInterQualification();
+		btech.displayBtechQualification();
+
+	}
+
+}
+
+
+package inheritance.app1;
+
+public class SuperClass {
+	
+	void display() {
+		System.out.println("Hi...Super class");
+	}
+
+}
+
+package inheritance.app1;
+
+public class SubClass extends SuperClass{
+	
+	void display1() {
+		System.out.println("Hi....Sub Class");
+	}
+
+}
+package inheritance.app1;
+
+public class InheritanceDemo1 {
+
+	public static void main(String[] args) {
+		
+		SubClass sb = new SubClass();
+		sb.display();
+		sb.display1();
+		
+	}
+
+}
+
+
